@@ -1,0 +1,7 @@
+{
+    "camelcase": true,
+    "strict": false,
+    "esversion": 6,
+    "maxlen": 200
+
+}
