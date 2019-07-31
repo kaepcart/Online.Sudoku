@@ -111,7 +111,6 @@ export default {
     this.hub = hub;
 
     $.connection.hub.start({ transport: ["webSockets"] }).done(() => {
-      console.log("Success");
     });
 
     $.connection.hub.error(error => {
@@ -129,7 +128,6 @@ export default {
     };
 
     hub.client.AddUser = obj => {
-      console.log(obj);
       this.users = obj;
     };
 
@@ -149,6 +147,7 @@ export default {
 
     //Работа с пользователями
     hub.client.GetUserTop = top => {
+      this.loading=false;
       this.topUsers = top;
     };
 
@@ -208,6 +207,7 @@ export default {
     },
 
     getTop: function() {
+      this.loading=true;
       this.hub.server.usersTop();
       this.Mode = this.Modes.top;
     }

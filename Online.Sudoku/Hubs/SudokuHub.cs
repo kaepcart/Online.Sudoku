@@ -56,11 +56,7 @@ namespace Online.Sudoku.Hubs
             }
             catch (NoSolutionException ex)
             {
-                mr=new CellResponse(MoveStatuses.NoSolution,ex);
-            }
-            catch (Exception ex)
-            {
-                mr = new CellResponse(ex);
+                mr=new CellResponse(ex);
             }
 
             if (mr.status == MoveStatuses.Error)
@@ -75,9 +71,7 @@ namespace Online.Sudoku.Hubs
             }
             else
             {
-
                 Clients.All.InsertNumber(mr);
-
             }
 
         }

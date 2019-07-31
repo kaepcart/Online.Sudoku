@@ -29,7 +29,7 @@ namespace Online.Sudoku.Services.SudokuServices
         public SudokuFieldBuilder()
         {
             this.rang = 9;
-            this.emptyCount = 2;
+            this.emptyCount = 54;
             rnd = new Random();
         }
 
@@ -122,7 +122,7 @@ namespace Online.Sudoku.Services.SudokuServices
         {
             IList<Action> mixeFunctions = GetOperation();
 
-            var countOperation = rnd.Next(5, 30);
+            var countOperation = rnd.Next(10, 40);
 
             for (int i = 0; i < countOperation; i++)
             {

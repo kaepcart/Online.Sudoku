@@ -12,12 +12,17 @@ namespace Online.Sudoku.Services.SudokuServices
 {
     public class UserService : IUserService
     {
+        #region ctor
+
         private readonly SudokuContext db;
 
         public UserService()
         {
             db = new SudokuContext();
         }
+
+        #endregion
+
         public async Task<IEnumerable<TopUserViewModel>> GetTop(string conectionId)
         {
             var result = await db.TopUsers.Select(u => new TopUserViewModel
@@ -29,7 +34,7 @@ namespace Online.Sudoku.Services.SudokuServices
                 Time = u.Time,
                 IsCurrent = u.ConectionId == conectionId
 
-            }).OrderBy(x => x.Time).ToListAsync();
+            }).OrderBy(x => x.Time).Take(50).ToListAsync();
 
             return result;
         }

@@ -1,6 +1,6 @@
 <template >
 <div>
-    <h4>Топ игроков:</h4>
+    <h4>Топ 50 лучших игр:</h4>
   <table class="table table-striped table-bordered">
     <thead>
       <tr>

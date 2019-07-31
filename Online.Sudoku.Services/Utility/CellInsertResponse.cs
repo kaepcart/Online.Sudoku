@@ -61,9 +61,9 @@ namespace Online.Sudoku.Services.Utility
             Error = ex.Message;
         }
 
-        public CellResponse(MoveStatuses status, Exception ex)
+        public CellResponse(NoSolutionException ex)
         {
-            this.status = status;
+            this.status = MoveStatuses.NoSolution;
 
             Error = ex.Message;
         }
