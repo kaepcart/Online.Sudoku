@@ -1,5 +1,6 @@
 # Online.Sudoku
-It's Sudoku for one field and several players. Its example of using Vue.js with Webpack.js and Signalr framework
+It's Sudoku for one field and several players. Its example of using Vue.js with Webpack.js and Signalr framework.
+Language of comment in the code and in the UI is RU
 
 ## Getting Started
 1. Get the project
