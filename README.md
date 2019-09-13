@@ -13,8 +13,13 @@ It's Sudoku for one field and several players. Its example of using Vue.js with 
 
 
 ## Structure
+
 Online.Sudoku - Web Project
+
 Online.Sudoku\app - webpack frontend project
+
 Online.Sudoku.ConsoleClient - console client 
+
 Online.Sudoku.Services - services project involves all logic 
-OnlineSudoku.Data - data bases 
+
+OnlineSudoku.Data - database project
