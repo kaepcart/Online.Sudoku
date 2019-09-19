@@ -1,5 +1,5 @@
 # Online.Sudoku
-It's Sudoku for one field and several players. Its example of using Vue.js with Webpack.js and Signalr framework.
+It's Sudoku game for one field(static) and several players. It's an example of using Vue.js with Webpack and Signal R framework.
 Language of comment in the code and in the UI is RU
 
 ## Getting Started
